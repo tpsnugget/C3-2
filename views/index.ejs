@@ -10,6 +10,7 @@
       <% dogs.forEach(function(e){ %>
       <p>
          Name: <%= e.name %>, Breed: <%= e.breed %>, State: <%= e.state %>
+         <a class="btn btn-outline-dark btn-sm" href="/dogs/<%= e._id %>">More Info</a>
       </p>
       <% }) %>
    </div>

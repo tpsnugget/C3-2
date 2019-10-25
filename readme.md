@@ -25,3 +25,8 @@ Added ability to update the dB with a new dog
 - Add data to header and footer.ejs files
 - Included Bootstrap 4
 - Added to each .ejs file
+
+# Version 5
+Added views/show.ejs
+Added buttons to Index Show All Dogs Page to show info on a single dog
+Now able to show info on a single dog
