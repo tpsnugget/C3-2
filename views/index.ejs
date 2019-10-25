@@ -1,5 +1,13 @@
 <h1>Show All Dogs Page</h1>
 
+<div>
+      <% dogs.forEach(function(e){ %>
+         <p>
+            Name: <%= e.name %>, Breed: <%= e.breed %>, State: <%= e.state %>
+         </p>
+      <% }) %>
+</div>
+
 <form action="/dogs/new">
    <button>Add a New Dog</button>
 </form>

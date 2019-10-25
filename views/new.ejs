@@ -1,6 +1,8 @@
 <h1>Add a New Dog Page</h1>
 
 <form action="/dogs" method="POST">
-   <input type="text" placeholder="New Dog's Name" name="newDog">
+   <input type="text" placeholder="New Dog's Name" name="newDog[name]">
+   <input type="text" placeholder="New Dog's Breed" name="newDog[breed]">
+   <input type="text" placeholder="New Dog's State" name="newDog[state]">
    <button>Submit</button>
 </form>
