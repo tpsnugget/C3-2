@@ -1,13 +1,22 @@
-<h1>Show All Dogs Page</h1>
+<% include partials/header %>
 
-<div>
+<title>Show All Dogs Page</title>
+</head>
+
+<div class="container">
+   <h1>Show All Dogs Page</h1>
+
+   <div>
       <% dogs.forEach(function(e){ %>
-         <p>
-            Name: <%= e.name %>, Breed: <%= e.breed %>, State: <%= e.state %>
-         </p>
+      <p>
+         Name: <%= e.name %>, Breed: <%= e.breed %>, State: <%= e.state %>
+      </p>
       <% }) %>
+   </div>
+
+   <form action="/dogs/new">
+      <button autofocus>Add a New Dog</button>
+   </form>
 </div>
 
-<form action="/dogs/new">
-   <button autofocus>Add a New Dog</button>
-</form>
+<% include partials/footer %>

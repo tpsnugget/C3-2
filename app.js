@@ -54,9 +54,6 @@ app.post("/dogs", function(req, res){
       }
       else {res.redirect("/dogs")}
    })
-   // console.log(req.body.newDog.name)
-   // console.log(req.body.newDog.breed)
-   // console.log(req.body.newDog.state)
 })
 
 app.listen(3000, process.env.IP, function () {
