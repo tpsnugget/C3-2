@@ -17,3 +17,6 @@ mkdir views/partials
 - npm i --save mongoose
 - Added mongoose to app.js
 - All dogs now listed from dB
+
+# Version 3
+Added ability to update the dB with a new dog

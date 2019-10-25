@@ -47,10 +47,16 @@ app.get("/dogs/new", function(req, res){
 // CREATE ROUTE to create a new dog
 app.post("/dogs", function(req, res){
    // Create new dog
-   console.log(req.body.newDog.name)
-   console.log(req.body.newDog.breed)
-   console.log(req.body.newDog.state)
-   res.redirect("/dogs")
+   Dog.create(req.body.newDog, function(err, dog){
+      if (err) {
+         console.log("There was an error: ")
+         console.log(err)
+      }
+      else {res.redirect("/dogs")}
+   })
+   // console.log(req.body.newDog.name)
+   // console.log(req.body.newDog.breed)
+   // console.log(req.body.newDog.state)
 })
 
 app.listen(3000, process.env.IP, function () {
