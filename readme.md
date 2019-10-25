@@ -20,3 +20,8 @@ mkdir views/partials
 
 # Version 3
 Added ability to update the dB with a new dog
+
+# Version 4
+- Add data to header and footer.ejs files
+- Included Bootstrap 4
+- Added to each .ejs file

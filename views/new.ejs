@@ -1,8 +1,17 @@
-<h1>Add a New Dog Page</h1>
+<% include partials/header %>
 
-<form action="/dogs" method="POST">
-   <input type="text" placeholder="New Dog's Name" name="newDog[name]" autofocus>
-   <input type="text" placeholder="New Dog's Breed" name="newDog[breed]">
-   <input type="text" placeholder="New Dog's State" name="newDog[state]">
-   <button>Submit</button>
-</form>
+<title>Add a New Dog Page</title>
+</head>
+
+<div class="container">
+   <h1>Add a New Dog Page</h1>
+
+   <form action="/dogs" method="POST">
+      <input type="text" placeholder="New Dog's Name" name="newDog[name]" autofocus>
+      <input type="text" placeholder="New Dog's Breed" name="newDog[breed]">
+      <input type="text" placeholder="New Dog's State" name="newDog[state]">
+      <button>Submit</button>
+   </form>
+</div>
+
+<% include partials/footer %>
