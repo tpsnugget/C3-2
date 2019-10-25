@@ -56,6 +56,17 @@ app.post("/dogs", function(req, res){
    })
 })
 
+// SHOW ROUTE to show info one a single dog
+app.get("/dogs/:id", function(req, res){
+   Dog.findById(req.params.id, function(err, foundDog){
+      if (err) {
+         console.log("There was an error: ")
+         console.log(err)
+      }
+      else {res.render("show", {dog: foundDog})}
+   })
+})
+
 app.listen(3000, process.env.IP, function () {
    console.log("The server is running ... ")
 })
